@@ -23,4 +23,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [X] Unit Testing with Vitest
 - [ ] Integration and end-to-end Testing with Playwright
 - [ ] GitHub Actions for CI
-- [ ] Logging
+- [X] Logging with Pino
+- [ ] Send logs to BetterStack
