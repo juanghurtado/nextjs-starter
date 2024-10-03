@@ -1,8 +1,14 @@
+import createNextIntlPlugin from 'next-intl/plugin';
+
+const withNextIntl = createNextIntlPlugin('./src/lib/i18n.ts');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  poweredByHeader: false,
+  reactStrictMode: true,
   eslint: {
     dirs: ['.']
   }
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

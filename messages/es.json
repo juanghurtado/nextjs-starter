@@ -1,0 +1,6 @@
+{
+  "HomePage": {
+    "title": "Hola mundo!",
+    "client-component": "Componente en cliente"
+  }
+}
