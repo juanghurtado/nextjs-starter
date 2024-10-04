@@ -4,10 +4,10 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server (we use `bun` as the package manager, but you can use `npm` or `yarn` as well):
+First, run the development server (we use `yarn` as the package manager, but you can use `npm` as well):
 
 ```bash
-bun dev
+yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
