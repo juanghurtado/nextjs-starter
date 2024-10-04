@@ -22,6 +22,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [ ] Convex DB
 - [X] Unit Testing with Vitest
 - [ ] Integration and end-to-end Testing with Playwright
-- [ ] GitHub Actions for CI
+- [X] GitHub Actions for CI
 - [X] Logging with Pino
 - [X] Send logs to BetterStack
