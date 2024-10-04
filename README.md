@@ -17,11 +17,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [X] Initial config (ESLint, Prettier, Husky, Lint-Staged…)
 - [X] shadcn/ui support
 - [X] I18n with `next-intl`
-- [ ] Env vars with T3
+- [X] Env vars with T3
 - [ ] Convex Auth
 - [ ] Convex DB
 - [X] Unit Testing with Vitest
 - [ ] Integration and end-to-end Testing with Playwright
 - [ ] GitHub Actions for CI
 - [X] Logging with Pino
-- [ ] Send logs to BetterStack
+- [X] Send logs to BetterStack
