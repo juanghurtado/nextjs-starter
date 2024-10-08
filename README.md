@@ -18,8 +18,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [X] shadcn/ui support
 - [X] I18n with `next-intl`
 - [X] Env vars with T3
-- [ ] Convex Auth (signup/signin with Google and with password, forgot password…)
-- [ ] Convex DB
+- [X] Convex Auth (signin with GitHub)
+- [ ] Convex Auth (signin with Google)
+- [ ] Convex Auth (signin/signup with password)
 - [X] Unit Testing with Vitest
 - [ ] Integration and end-to-end Testing with Playwright
 - [X] GitHub Actions for CI
