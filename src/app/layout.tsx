@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getMessages } from 'next-intl/server';
 
+import { Toaster } from '@/components/ui/sonner';
 import { ConvexClientProvider } from '@/lib/convex-client-provider';
 import './globals.css';
 
@@ -25,7 +26,8 @@ export default async function RootLayout({
         <body>
           <NextIntlClientProvider messages={messages}>
             <ConvexClientProvider>
-              <div className="h-full bg-slate-50 p-2.5">{children}</div>
+              {children}
+              <Toaster />
             </ConvexClientProvider>
           </NextIntlClientProvider>
         </body>

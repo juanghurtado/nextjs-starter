@@ -1,29 +1,32 @@
-import logtail from '@logtail/pino';
 import pino from 'pino';
-import pretty from 'pino-pretty';
 import { ENV } from './env';
 import { LogArgs, LogErrorArgs } from './logger.types';
 
-const logger = pino(
-  {
-    level: ENV.NODE_ENV === 'production' ? 'warn' : 'trace'
-  },
-  ENV.BETTERSTACK_SOURCE_TOKEN
-    ? pino.multistream([
-        await logtail({
-          sourceToken: ENV.BETTERSTACK_SOURCE_TOKEN,
-          options: {
-            sendLogsToBetterStack: true
-          }
-        }),
-        {
-          stream: pretty()
+const isProduction = process.env['NODE_ENV'] === 'production';
+
+const logger = pino({
+  level: isProduction ? 'warn' : 'debug',
+  transport: {
+    targets: [
+      {
+        target: 'pino-pretty',
+        options: {
+          colorize: !isProduction
         }
-      ])
-    : pretty({
-        colorize: true
-      })
-);
+      },
+      ...(typeof window === 'undefined' && ENV.BETTERSTACK_SOURCE_TOKEN
+        ? [
+            {
+              target: '@logtail/pino',
+              options: {
+                sourceToken: ENV.BETTERSTACK_SOURCE_TOKEN
+              }
+            }
+          ]
+        : [])
+    ]
+  }
+});
 
 const getExtraInfo = (object: Error | unknown): string => {
   return object

@@ -1,6 +1,42 @@
 {
-  "HomePage": {
-    "title": "Hello world!",
-    "client-component": "Client component"
+  "Common": {
+    "title": "NextJS Starter",
+    "logout": "Logout"
+  },
+  "Signin": {
+    "title": "Log in to NextJS Starter",
+    "signin-github": "Continue with GitHub",
+    "signin-google": "Continue with Google",
+    "login": "Log in",
+    "email": "E-Mail",
+    "email-placeholder": "Enter your E-Mail",
+    "password": "Password",
+    "password-placeholder": "Enter your password",
+    "error": "Invalid E-Mail or password",
+    "no-account": "Don't have an account?",
+    "register": "Register now"
+  },
+  "Signup": {
+    "title": "Signup to NextJS Starter",
+    "signin-github": "Continue with GitHub",
+    "signin-google": "Continue with Google",
+    "signup": "Sign up",
+    "email": "E-Mail",
+    "email-placeholder": "Enter your E-Mail",
+    "password": "Password",
+    "password-placeholder": "Enter your contraseña",
+    "re-password": "Confirm your password",
+    "re-password-placeholder": "Enter your password again",
+    "error": "We could not create your account.",
+    "already-registered": "Already have an account?",
+    "error-match-password": "Passwords don't match with each other",
+    "signin": "Sign in"
+  },
+  "Home": {
+    "desc": "NextJS template with Convex integration for authentication and data access",
+    "register": "Sign in"
+  },
+  "Dashboard": {
+    "welcome": "Welcome {name}!"
   }
 }

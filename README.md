@@ -19,8 +19,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [X] I18n with `next-intl`
 - [X] Env vars with T3
 - [X] Convex Auth (signin with GitHub)
-- [ ] Convex Auth (signin with Google)
-- [ ] Convex Auth (signin/signup with password)
+- [X] Convex Auth (signin with Google)
+- [X] Convex Auth (signin/signup with password)
+- [ ] Convex Auth Password with e-Mail verification
 - [X] Unit Testing with Vitest
 - [ ] Integration and end-to-end Testing with Playwright
 - [X] GitHub Actions for CI

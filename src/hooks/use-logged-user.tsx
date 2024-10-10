@@ -1,5 +1,5 @@
+import { api } from '@convex/_generated/api';
 import { useQuery } from 'convex/react';
-import { api } from '../convex/_generated/api';
 
 export const useLoggedUser = () => {
   const data = useQuery(api.users.getLoggedUser);

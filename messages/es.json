@@ -1,6 +1,42 @@
 {
-  "HomePage": {
-    "title": "Hola mundo!",
-    "client-component": "Componente en cliente"
+  "Common": {
+    "title": "NextJS Starter",
+    "logout": "Cerrar sesión"
+  },
+  "Signin": {
+    "title": "Entra en NextJS Starter",
+    "signin-github": "Continuar con GitHub",
+    "signin-google": "Continuar con Google",
+    "login": "Entrar",
+    "email": "E-Mail",
+    "email-placeholder": "Introduce tu E-Mail",
+    "password": "Contraseña",
+    "password-placeholder": "Introduce tu contraseña",
+    "error": "El E-Mail o la contraseña no son correctos",
+    "no-account": "¿No tienes una cuenta?",
+    "register": "Regístrate"
+  },
+  "Signup": {
+    "title": "Regístrate en NextJS Starter",
+    "signin-github": "Continuar con GitHub",
+    "signin-google": "Continuar con Google",
+    "signup": "Registrarse",
+    "email": "E-Mail",
+    "email-placeholder": "Introduce tu E-Mail",
+    "password": "Contraseña",
+    "password-placeholder": "Introduce tu contraseña",
+    "re-password": "Confirma tu contraseña",
+    "re-password-placeholder": "Introduce de nuevo tu contraseña",
+    "error": "No hemos podido crear tu cuenta.",
+    "already-registered": "¿Ya tienes una cuenta?",
+    "error-match-password": "Las contraseñas deben coincidir coinciden",
+    "signin": "Accede"
+  },
+  "Home": {
+    "desc": "Plantilla para aplicaciones NextJS con integración con Convex para la autenticación y el acceso a datos",
+    "register": "Acceder"
+  },
+  "Dashboard": {
+    "welcome": "¡Bienvenido {name}!"
   }
 }
