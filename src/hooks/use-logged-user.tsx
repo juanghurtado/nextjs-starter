@@ -1,11 +1,10 @@
-import { api } from '@convex/_generated/api';
-import { useQuery } from 'convex/react';
+import { useUser } from '@clerk/nextjs';
 
 export const useLoggedUser = () => {
-  const data = useQuery(api.users.getLoggedUser);
+  const data = useUser();
 
   return {
-    loggedUser: data,
-    isLoading: data === undefined
+    loggedUser: data.user,
+    isLoading: !data.isLoaded
   };
 };

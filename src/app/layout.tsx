@@ -1,4 +1,3 @@
-import { ConvexAuthNextjsServerProvider } from '@convex-dev/auth/nextjs/server';
 import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getMessages } from 'next-intl/server';
@@ -21,17 +20,15 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <ConvexAuthNextjsServerProvider>
-      <html lang={locale}>
-        <body>
-          <NextIntlClientProvider messages={messages}>
-            <ConvexClientProvider>
-              {children}
-              <Toaster />
-            </ConvexClientProvider>
-          </NextIntlClientProvider>
-        </body>
-      </html>
-    </ConvexAuthNextjsServerProvider>
+    <html lang={locale}>
+      <body>
+        <NextIntlClientProvider messages={messages}>
+          <ConvexClientProvider locale={locale}>
+            <div className="h-full bg-slate-50">{children}</div>
+            <Toaster />
+          </ConvexClientProvider>
+        </NextIntlClientProvider>
+      </body>
+    </html>
   );
 }
